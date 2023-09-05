@@ -16,7 +16,7 @@ const NavigationBar = () => {
           <li>Living Room</li>
           <li>Bedroom</li>
         </ul>
-        <span style={{ fontSize: "1rem" }}>
+        <span style={{ fontSize: "1.25rem" }}>
           <BiSearch></BiSearch>
         </span>
       </div>
@@ -26,7 +26,7 @@ const NavigationBar = () => {
           <li>Track Order</li>
           <li>Help</li>
         </ul>
-        <span style={{ fontSize: "1rem" }}>
+        <span style={{ fontSize: "1.25rem" }}>
           <BsCart4></BsCart4>
         </span>
       </div>

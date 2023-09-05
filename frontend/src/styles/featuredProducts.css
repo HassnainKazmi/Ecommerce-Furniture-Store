@@ -1,0 +1,38 @@
+.featured-main-container {
+  margin-top: 4rem;
+}
+
+.featured-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2rem;
+}
+
+.featured-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f1f2f2;
+  padding: 1.5rem 0rem 2.5rem 0rem;
+  transition: transform 0.3s ease;
+}
+
+.featured-container div:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.featured-container img {
+  width: 80%;
+  height: auto;
+}
+
+.featured-container p {
+  font-weight: 500;
+}
+
+.featured-main-container h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}

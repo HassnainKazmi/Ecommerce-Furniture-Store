@@ -25,7 +25,7 @@
 }
 
 .navigation-container li {
-  margin: 0.5rem 0.75rem;
+  margin: 0.5rem 0.5rem;
   color: #555555;
   font-weight: 500;
   transition: transform 0.3s ease;

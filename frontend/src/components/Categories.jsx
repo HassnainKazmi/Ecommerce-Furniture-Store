@@ -14,7 +14,7 @@ const Categories = () => {
       <div className="categories-container">
         <div>
           <img
-            src="/Ecommerce-Furniture-Store/src/assets/bedroom.png"
+            src="./Ecommerce-Furniture-Store/src/assets/bedroom.png"
             alt="Bedroom"
           />
           <h4 className="text-2xl font-bold dark:text-white">Bedroom</h4>
@@ -22,7 +22,7 @@ const Categories = () => {
         </div>
         <div>
           <img
-            src="/Ecommerce-Furniture-Store/src/assets/decor.png"
+            src="./Ecommerce-Furniture-Store/src/assets/decor.png"
             alt="Decor"
           />
           <h4 className="text-2xl font-bold dark:text-white">Decor</h4>
@@ -30,7 +30,7 @@ const Categories = () => {
         </div>
         <div>
           <img
-            src="/Ecommerce-Furniture-Store/src/assets/living-room.png"
+            src="./Ecommerce-Furniture-Store/src/assets/living-room.png"
             alt="Living Room"
           />
           <h4 className="text-2xl font-bold dark:text-white">Living Room</h4>
@@ -38,7 +38,7 @@ const Categories = () => {
         </div>
         <div>
           <img
-            src="/Ecommerce-Furniture-Store/src/assets/office.png"
+            src="./Ecommerce-Furniture-Store/src/assets/office.png"
             alt="Office"
           />
           <h4 className="text-2xl font-bold dark:text-white">Office</h4>

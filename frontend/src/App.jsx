@@ -4,6 +4,7 @@ import Categories from "./components/Categories";
 import FeaturedProducts from "./components/FeaturedProducts";
 import Feedback from "./components/Feedback";
 import Promotion from "./components/Promotion";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <FeaturedProducts />
       <Feedback />
       <Promotion />
+      <Footer />
     </>
   );
 };

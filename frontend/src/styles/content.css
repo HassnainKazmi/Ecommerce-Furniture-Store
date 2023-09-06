@@ -4,4 +4,9 @@
 
 .content-container button {
   margin-top: 1rem;
+  transition: opacity 0.3s ease-in;
+}
+
+.content-container button:hover {
+  opacity: 0.9;
 }

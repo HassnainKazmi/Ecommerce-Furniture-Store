@@ -14,7 +14,7 @@ const Categories = () => {
       <div className="categories-container">
         <div>
           <img
-            src="./Ecommerce-Furniture-Store/src/assets/bedroom.png"
+            src="./Ecommerce-Furniture-Store/src/assets/bedroom.png?raw=true"
             alt="Bedroom"
           />
           <h4 className="text-2xl font-bold dark:text-white">Bedroom</h4>

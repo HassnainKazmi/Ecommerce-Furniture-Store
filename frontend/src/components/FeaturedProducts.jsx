@@ -1,10 +1,5 @@
 import "../styles/featuredProducts.css";
-import product01 from "../assets/images/product-01.jpg";
-import product10 from "../assets/images/product-10.jpg";
-import product12 from "../assets/images/product-12.jpg";
-import product13 from "../assets/images/product-13.jpg";
-import product02 from "../assets/images/product-02.jpg";
-import product11 from "../assets/images/product-11.jpg";
+import { featuredProducts } from "../assets/data/data";
 
 const FeaturedProducts = () => {
   return (
@@ -20,44 +15,19 @@ const FeaturedProducts = () => {
         }}
       ></hr>
       <div className="featured-container">
-        <div>
-          <img src={product01} alt="product-01" />
-          <h4 className="text-2xl font-bold dark:text-white">Product Name 1</h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
-        <div>
-          <img src={product10} alt="product-10" />
-          <h4 className="text-2xl font-bold dark:text-white">
-            Product Name 10
-          </h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
-        <div>
-          <img src={product12} alt="product-12" />
-          <h4 className="text-2xl font-bold dark:text-white">
-            Product Name 12
-          </h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
-        <div>
-          <img src={product13} alt="product-13" />
-          <h4 className="text-2xl font-bold dark:text-white">
-            Product Name 13
-          </h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
-        <div>
-          <img src={product02} alt="product-02" />
-          <h4 className="text-2xl font-bold dark:text-white">Product Name 2</h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
-        <div>
-          <img src={product11} alt="product-11" />
-          <h4 className="text-2xl font-bold dark:text-white">
-            Product Name 11
-          </h4>
-          <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
-        </div>
+        {featuredProducts.map((product) => {
+          return (
+            <div key={product.id}>
+              <img src={product.image} alt="product-01" />
+              <h4 className="text-2xl font-bold dark:text-white">
+                {product.productName}
+              </h4>
+              <p className="text-gray-500 dark:text-gray-400">
+                {product.price}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

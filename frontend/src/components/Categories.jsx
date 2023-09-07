@@ -1,8 +1,5 @@
 import "../styles/categories.css";
-import bedroom from "../assets/images/bedroom.png";
-import decor from "../assets/images/decor.png";
-import livingroom from "../assets/images/living-room.png";
-import office from "../assets/images/office.png";
+import { categories } from "../assets/data/data";
 
 const Categories = () => {
   return (
@@ -16,26 +13,19 @@ const Categories = () => {
         }}
       ></hr>
       <div className="categories-container">
-        <div>
-          <img src={bedroom} alt="Bedroom" />
-          <h4 className="text-2xl font-bold dark:text-white">Bedroom</h4>
-          <p className="text-gray-500 dark:text-gray-400">6 products</p>
-        </div>
-        <div>
-          <img src={decor} alt="Decor" />
-          <h4 className="text-2xl font-bold dark:text-white">Decor</h4>
-          <p className="text-gray-500 dark:text-gray-400">9 products</p>
-        </div>
-        <div>
-          <img src={livingroom} alt="Living Room" />
-          <h4 className="text-2xl font-bold dark:text-white">Living Room</h4>
-          <p className="text-gray-500 dark:text-gray-400">6 products</p>
-        </div>
-        <div>
-          <img src={office} />
-          <h4 className="text-2xl font-bold dark:text-white">Office</h4>
-          <p className="text-gray-500 dark:text-gray-400">11 products</p>
-        </div>
+        {categories.map((category) => {
+          return (
+            <div key={category.id}>
+              <img src={category.image} alt="Bedroom" />
+              <h4 className="text-2xl font-bold dark:text-white">
+                {category.productName}
+              </h4>
+              <p className="text-gray-500 dark:text-gray-400">
+                {category.quantity}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </section>
   );

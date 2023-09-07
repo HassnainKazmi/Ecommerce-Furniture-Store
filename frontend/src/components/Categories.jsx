@@ -13,34 +13,22 @@ const Categories = () => {
       ></hr>
       <div className="categories-container">
         <div>
-          <img
-            src="./Ecommerce-Furniture-Store/src/assets/bedroom.png?raw=true"
-            alt="Bedroom"
-          />
+          <img src="./src/assets/images/bedroom.png?raw=true" alt="Bedroom" />
           <h4 className="text-2xl font-bold dark:text-white">Bedroom</h4>
           <p className="text-gray-500 dark:text-gray-400">6 products</p>
         </div>
         <div>
-          <img
-            src="./Ecommerce-Furniture-Store/src/assets/decor.png"
-            alt="Decor"
-          />
+          <img src="./src/assets/images/decor.png" alt="Decor" />
           <h4 className="text-2xl font-bold dark:text-white">Decor</h4>
           <p className="text-gray-500 dark:text-gray-400">9 products</p>
         </div>
         <div>
-          <img
-            src="./Ecommerce-Furniture-Store/src/assets/living-room.png"
-            alt="Living Room"
-          />
+          <img src="./src/assets/images/living-room.png" alt="Living Room" />
           <h4 className="text-2xl font-bold dark:text-white">Living Room</h4>
           <p className="text-gray-500 dark:text-gray-400">6 products</p>
         </div>
         <div>
-          <img
-            src="./Ecommerce-Furniture-Store/src/assets/office.png"
-            alt="Office"
-          />
+          <img src="./src/assets/images/office.png" alt="Office" />
           <h4 className="text-2xl font-bold dark:text-white">Office</h4>
           <p className="text-gray-500 dark:text-gray-400">11 products</p>
         </div>

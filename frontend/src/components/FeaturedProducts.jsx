@@ -15,38 +15,38 @@ const FeaturedProducts = () => {
       ></hr>
       <div className="featured-container">
         <div>
-          <img src="/src/assets/product-01.jpg" alt="product-01" />
+          <img src="./src/assets/images/product-01.jpg" alt="product-01" />
           <h4 className="text-2xl font-bold dark:text-white">Product Name 1</h4>
           <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
         </div>
         <div>
-          <img src="/src/assets/product-10.jpg" alt="product-10" />
+          <img src="./src/assets/images/product-10.jpg" alt="product-10" />
           <h4 className="text-2xl font-bold dark:text-white">
             Product Name 10
           </h4>
           <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
         </div>
         <div>
-          <img src="/src/assets/product-12.jpg" alt="product-12" />
+          <img src="./src/assets/images/product-12.jpg" alt="product-12" />
           <h4 className="text-2xl font-bold dark:text-white">
             Product Name 12
           </h4>
           <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
         </div>
         <div>
-          <img src="/src/assets/product-13.jpg" alt="product-13" />
+          <img src="./src/assets/images/product-13.jpg" alt="product-13" />
           <h4 className="text-2xl font-bold dark:text-white">
             Product Name 13
           </h4>
           <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
         </div>
         <div>
-          <img src="/src/assets/product-02.jpg" alt="product-02" />
+          <img src="./src/assets/images/product-02.jpg" alt="product-02" />
           <h4 className="text-2xl font-bold dark:text-white">Product Name 2</h4>
           <p className="text-gray-500 dark:text-gray-400">$85.00 - $99.00</p>
         </div>
         <div>
-          <img src="/src/assets/product-11.jpg" alt="product-11" />
+          <img src="./src/assets/images/product-11.jpg" alt="product-11" />
           <h4 className="text-2xl font-bold dark:text-white">
             Product Name 11
           </h4>

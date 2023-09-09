@@ -26,6 +26,7 @@
   height: auto;
   margin-bottom: 0.25rem;
   cursor: pointer;
+  border-radius: 20%;
 }
 
 .categories-container p {

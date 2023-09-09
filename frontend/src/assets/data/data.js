@@ -2,12 +2,12 @@ import bedroom from "../images/bedroom.png";
 import decor from "../images/decor.png";
 import livingroom from "../images/living-room.png";
 import office from "../images/office.png";
-import product01 from "../images/product-01.jpg";
-import product10 from "../images/product-10.jpg";
-import product12 from "../images/product-12.jpg";
-import product13 from "../images/product-13.jpg";
-import product02 from "../images/product-02.jpg";
-import product11 from "../images/product-11.jpg";
+import product01 from "../images/product-01-gold.jpg";
+import product10 from "../images/product-10-black.jpg";
+import product12 from "../images/product-12-bronze.jpg";
+import product13 from "../images/product-13-gold.jpg";
+import product02 from "../images/product-02-black.jpg";
+import product11 from "../images/product-11-bronze.jpg";
 
 export const categories = [
   {

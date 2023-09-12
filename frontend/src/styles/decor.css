@@ -1,0 +1,33 @@
+.decor-main-container {
+  margin-top: 5rem;
+}
+
+.decor-content p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.decor-content h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem 0rem 2rem 0rem;
+}
+
+.decor-content span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777;
+}
+
+.decor-content select {
+  float: right;
+  background-image: none;
+  border: none;
+  width: 15rem;
+  padding: 0.45rem;
+}
+
+.decor-content select:active {
+  border: none;
+}

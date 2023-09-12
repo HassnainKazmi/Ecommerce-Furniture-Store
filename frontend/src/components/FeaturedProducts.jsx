@@ -46,7 +46,7 @@ const FeaturedProducts = () => {
                 <span>Sale!</span>
               </div>
               <img src={product.image[selectedColorIndex]} alt={product.name} />
-              <h4 className="text-2xl font-bold dark:text-white">
+              <h4 className="text-2xl font-bold dark:text-white mt-2">
                 {product.productName}
               </h4>
               <p className="text-gray-500 dark:text-gray-400">

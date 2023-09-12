@@ -51,42 +51,42 @@ export const categories = [
 export const featuredProducts = [
   {
     id: 0,
-    image: [product01B, product01BR, product01G], // Match the order of colors
+    image: [product01B, product01BR, product01G],
     productName: "Product 01",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],
   },
   {
     id: 1,
-    image: [product10B, product10BR, product10G], // Match the order of colors
+    image: [product10B, product10BR, product10G],
     productName: "Product 10",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],
   },
   {
     id: 2,
-    image: [product12B, product12BR, product12G], // Match the order of colors
+    image: [product12B, product12BR, product12G],
     productName: "Product 12",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],
   },
   {
     id: 3,
-    image: [product13B, product13BR, product13G], // Match the order of colors
+    image: [product13B, product13BR, product13G],
     productName: "Product 13",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],
   },
   {
     id: 4,
-    image: [product02B, product02BR, product02G], // Match the order of colors
+    image: [product02B, product02BR, product02G],
     productName: "Product 2",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],
   },
   {
     id: 5,
-    image: [product11B, product11BR, product11G], // Match the order of colors
+    image: [product11B, product11BR, product11G],
     productName: "Product 11",
     price: "$85.00 - $90.00",
     colors: ["#000000", "#8f6453", "#dabca2"],

@@ -21,12 +21,18 @@
   position: relative;
   background-color: #f1f2f2;
   padding: 1.5rem 0rem 2.5rem 0rem;
-  transition: transform 0.3s ease;
 }
 
 .featured-content img {
   width: 60%;
   height: auto;
+  transition: transform 0.5s ease;
+}
+
+.featured-content img:hover {
+  width: 60%;
+  height: auto;
+  transform: scale(1.1);
 }
 
 .featured-content p {
@@ -34,7 +40,6 @@
 }
 
 .featured-content:hover {
-  transform: scale(1.03);
   cursor: pointer;
 }
 
@@ -44,9 +49,10 @@
   position: absolute;
   top: 0;
   left: 0;
-  margin: 2rem 1.5rem;
-  padding: 0.35em 0.75rem;
+  margin: 2rem 1.25rem;
+  padding: 0.35em 0.5rem;
   border-radius: 20px;
+  font-size: 0.75;
 }
 
 .button-container {

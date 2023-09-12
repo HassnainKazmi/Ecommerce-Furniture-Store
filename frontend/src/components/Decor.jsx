@@ -1,4 +1,4 @@
-import FeaturedProducts from "./FeaturedProducts";
+// import FeaturedProducts from "./FeaturedProducts";
 import "../styles/decor.css";
 const Decor = () => {
   return (
@@ -31,7 +31,7 @@ const Decor = () => {
           </option>
         </select>
       </div>
-      <FeaturedProducts />
+      {/* <FeaturedProducts /> */}
     </section>
   );
 };

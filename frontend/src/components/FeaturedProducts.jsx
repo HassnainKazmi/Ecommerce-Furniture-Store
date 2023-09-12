@@ -2,10 +2,28 @@ import "../styles/featuredProducts.css";
 import { featuredProducts } from "../assets/data/data";
 import { FaShoppingBasket } from "react-icons/fa";
 import { BsFillEyeFill } from "react-icons/bs";
-// import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const FeaturedProducts = () => {
-  // const [color, setColor] = useState(null);
+  const [selectedColors, setSelectedColors] = useState({});
+
+  useEffect(() => {
+    const initialSelectedColors = {};
+    featuredProducts.forEach((product) => {
+      const randomColorIndex = Math.floor(
+        Math.random() * product.colors.length
+      );
+      initialSelectedColors[product.id] = randomColorIndex;
+    });
+    setSelectedColors(initialSelectedColors);
+  }, []);
+
+  const handleColorChange = (productId, colorIndex) => {
+    setSelectedColors((prevSelectedColors) => ({
+      ...prevSelectedColors,
+      [productId]: colorIndex,
+    }));
+  };
 
   return (
     <section className="featured-main-container">
@@ -21,12 +39,13 @@ const FeaturedProducts = () => {
       ></hr>
       <div className="featured-container">
         {featuredProducts.map((product) => {
+          const selectedColorIndex = selectedColors[product.id];
           return (
             <div className="featured-content" key={product.id}>
               <div className="span-container">
                 <span>Sale!</span>
               </div>
-              <img src={product.image} alt="product-01" />
+              <img src={product.image[selectedColorIndex]} alt={product.name} />
               <h4 className="text-2xl font-bold dark:text-white">
                 {product.productName}
               </h4>
@@ -34,18 +53,16 @@ const FeaturedProducts = () => {
                 {product.price}
               </p>
               <div className="color-options">
-                <button
-                  className="button-color"
-                  style={{ backgroundColor: "#000000" }}
-                ></button>
-                <button
-                  className="button-color"
-                  style={{ backgroundColor: "#8f6453" }}
-                ></button>
-                <button
-                  className="button-color"
-                  style={{ backgroundColor: "#dabca2" }}
-                ></button>
+                {product.colors.map((colors, index) => (
+                  <button
+                    key={index}
+                    className="button-color"
+                    style={{
+                      backgroundColor: colors,
+                    }}
+                    onClick={() => handleColorChange(product.id, index)}
+                  ></button>
+                ))}
               </div>
               <div className="button-container">
                 <button className="button">
